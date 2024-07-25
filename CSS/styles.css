@@ -1,0 +1,555 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #A8E4A0;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+	margin-right: 30px;
+}
+
+main {
+    padding: 15px;
+    text-align: center;
+}
+
+button.mainbutton {
+    position: absolute;
+    width: 130px;
+    height: 28px;
+    right: 20px;
+    top: 35px;
+    background: #f0f0f0;
+    border-radius: 40px;
+    padding: 22px 0 33px;
+    font-family: Montserrat-Black;
+}
+
+footer {
+    background-color: #A8E4A0;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+h1, h2 {
+    text-align: center; 
+	margin-top: 15px;
+	margin-right: 160px;
+}
+
+main h2 {
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+ 
+.box {
+  background-color:  #A8E4A0; /* Зеленый цвет */
+  width: 330px;
+  margin-left: auto; /* Автоматический отступ слева */
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box-logo {
+   width: 130px;
+   height: 180px;
+   margin-bottom: 10px;
+   display: block; /* Занимаем всю ширину блока */
+   margin-left: auto; /* Автоматический отступ слева */
+   margin-right: auto;
+}
+
+.box-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.box-lk {
+  display: block;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.box-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.box-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 90%;
+}
+
+.modal2 {
+    display: none;
+}
+
+.modal2_overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.modal2_body {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    background: #fff;
+    margin-left: -200px;
+    margin-top: -150px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px black;
+    padding: 20px;
+}
+
+.regic {
+  background-color:  #A8E4A0;
+  padding: 20px; /* Отступы внутри прямоугольника */
+  border-radius: 10px; /* Радиус закругления углов */
+  margin-left: auto; /* Автоматический отступ слева */
+  margin-right: auto; /* Автоматический отступ справа */
+  width: 300px; /* Ширина прямоугольника */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.regic-link { 
+	display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+	padding: 10px;
+} 
+
+.regic-button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 90%;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 90%;
+}
+
+.courses-container {
+  display: flex; /* Размещаем карточки в ряд */
+  flex-direction: column; /* Изменяем направление на вертикальное */
+  align-items: center;
+  margin-top: 30px;
+  text-align: center
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  width: 45%; 
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+}
+
+.course-image {
+   float: left; 
+   width: 170px; 
+   height: 120px; 
+   margin-right: 20px; 
+   border-radius: 20%; 
+}
+
+.course-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-teacher {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.course-description-title {
+	padding: 5px;
+    font-size: 18px; 
+    font-weight: bold;
+    display: inline-block; /*  Сделать заголовок inline-block, чтобы текст шел сразу после */
+  }
+
+.calendar-container {
+    display: flex;
+	flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Выравнивание по центру по горизонтали */
+    gap: 40px;
+}
+
+.calendar {
+    border-collapse: collapse; 
+    width: 600px; 
+	margin: 0 auto;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+   .deadline-container {
+       display: flex;
+	   flex-wrap: wrap; /* Разрешаем перенос карточек на новую строку */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+       gap: 20px; 
+   }
+
+   .deadline {
+       border: 2px solid black;
+       padding: 10px;
+       border-radius: 5px; 
+       flex-direction: column;
+	   width: 170px;
+	   margin: 0 auto;
+   }
+
+   .deadline-number {
+       width: 30px; 
+       height: 30px; 
+       border-radius: 50%; 
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1.2em; 
+       margin-bottom: 5px; 
+   }
+
+.mes {
+	display: flex; /* Размещаем прямоугольники в ряд */
+	justify-content: space-between; /* Распределяем равномерно */
+	margin-top: 30px;
+}
+
+ .sidebar {
+     width: 500px; /* Ширина боковой панели */
+     float: left; 
+     margin-right: 20px; 
+   }
+
+ .teacher-item {
+     background-color: #fff; /* Фон для блока преподавателя */
+     padding: 20px;
+     margin-bottom: 20px;
+     border-radius: 5px; /* Закругленные углы */
+	 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+   }
+
+ .teacher-photo {
+     float: left; 
+     width: 50px; 
+     height: 50px; 
+     margin-right: 10px; 
+     border-radius: 50%; /* Круглая форма фото */
+   }
+
+.teacher-item span {
+     line-height: 50px; /* Высота строки для выравнивания по центру */
+     vertical-align: middle; /* Выравнивание по центру */
+}
+
+.teacher-profile {
+  background-color: #fff; 
+  width: 850px;
+  padding: 20px; 
+  border-radius: 5px; 
+  float: right; 
+  margin-right: 20px;
+}
+
+.teacher-profile-photo {
+  float: left; 
+  width: 100px; 
+  height: 100px; 
+  margin-right: 20px; 
+  border-radius: 50%; 
+}
+
+.teacher-profile-info {
+  margin-top: 10px;
+}
+
+.teacher-name {
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+.teacher-subject {
+  font-size: 16px;
+}
+
+hr { /* Черта */
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+}
+
+.notification-date { /* Дата зеленого цвета */
+  color: green;
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.notification {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between; 
+  margin-top: 20px; 
+  width: 45%;
+}
+
+.notification-text {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-radius: 5px;
+  margin-bottom: 10px; 
+  flex-grow: 1;
+   position: relative; /* Позиционируем текст для размещения времени */
+}
+
+.notification-text p {
+  margin: 0;
+}
+
+.notification-time {
+  font-size: 12px; 
+  color: #6c757d; 
+  position: absolute; 
+  bottom: 5px;
+  right: 5px;
+}
+
+.message {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: flex-end; /* Изменяем выравнивание на правую сторону */
+  margin-top: 10px; 
+  width: 17%;
+  margin-left: auto;
+}
+
+.message-text {
+  background-color: rgb(229, 255, 204); 
+  padding: 10px; 
+  border-radius: 5px;
+  margin-bottom: 10px; 
+  flex-grow: 1;
+   position: relative; /* Позиционируем текст для размещения времени */
+}
+
+.message-text p {
+  margin: 0;
+}
+
+.message-time {
+  font-size: 12px; 
+  color: #6c757d; 
+  position: absolute; 
+  bottom: 5px;
+  right: 5px;
+}
+
+.smiley {
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between;
+  margin-top: 10px; 
+  width: 15%;
+}
+
+.search {
+	background-color: #fff; 
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between;
+  margin-top: 50px; 
+  width: 100%;
+}
+
+.search-photo {
+	 float: left; 
+     width: 40px; 
+     height: 40px; 
+     margin-right: 10px; 
+     border-radius: 50%; /* Круглая форма фото */
+}
+
+.search-profile-info {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  border-radius: 5px;
+  margin-bottom: 5px; 
+  flex-grow: 1;
+  display: flex; /* Добавили flex для выравнивания */
+  align-items: center; /* Выравнивание по вертикали */
+  justify-content: space-between; /* Выравнивание по горизонтали */
+} 
+
+.search-input {
+  border: 1px solid #ccc; 
+  padding: 5px; 
+  border-radius: 5px;
+  flex-grow: 1; /* Занимает оставшееся пространство */
+}
+
+.search-profile-photo {
+     width: 50px; 
+     height: 40px; 
+     margin-right: 10px; 
+     border-radius: 50%; /* Круглая форма фото */
+	 margin-bottom: 5px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column; /* Расположение элементов друг под другом */
+    gap: 20px; /* Отступ между элементами */
+    margin-top: 20px;
+  }
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+	background-color: #fff;
+    padding: 20px;
+	margin: 0 auto; 
+	width: 40%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  }
+
+  .profile-image {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
+  .profile-info {
+    text-align: left;
+	width: 200px;
+	margin-right: 50px;
+	padding: 20px;
+  }
+
+.progress {
+	background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+	width: 40%;
+	margin: 0 auto; 
+	margin-top: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+
+  }
+
+.progress-header {
+    text-align: left; 
+	margin: 0; 
+    font-size: 18px; 
+    text-transform: uppercase; /* Заглавные буквы */
+  }
+
+.progress-bar {
+    position: relative;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+ .progress-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: red; 
+    border-radius: 5px;
+  }
+ 
+ .progress-label {
+    position: absolute;
+    top: -15px; /* Позиция над полоской прогресса */
+    right: 10px;
+    color: black; /* Цвет метки */
+  }
