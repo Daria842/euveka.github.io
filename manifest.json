@@ -1,7 +1,7 @@
 {
  "name": "Образовательная платформа",
  "description": "Учись с нами!",
- "short_name": "Эврика!",
+ "short_name": "Eureka",
   "start_url": "index.html",
   "lang": "ru",
   "display": "standalone",
