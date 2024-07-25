@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Регистрация</title>
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header>
+	<img src="Сова.png" width="130" height="180" align="left" hspace="3">
+    <br><h1>ЭВРИКА</h1>
+	<h2>УЧЕНИЕ-СВЕТ!</h2>
+</header>
+<main>
+<section>
+            <h2>Регистрация:</h2>
+            <div class="regic">
+			<form id="registration-form" method="POST" action="register.php">
+				<p>Имя:</p>
+				<input type="text"  id="name" name="name" required>
+				<p>Фамилия:</p>
+				<input type="text" id="surname" name="surname" required>
+				<p>Email:</p>
+				<input type="text" id="email" name="email" required>
+				<p>Пароль:</p>
+				<input type="password"  id="password" name="password" required>
+				<p>Повторите пароль:</p>
+				<input type="password"  id="confirm-password" name="confirm-password" required>
+				</form>
+				<a href="index.html" class="regic-link"><button class="regic-button">Войти</button></a>
+			</div>
+			<p><h2>Эврика – это не просто сайт, это целая экосистема для твоего саморазвития!</h2></p> 
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Эврика. Все права защищены.</p>
+    </footer>
+	
+	 <script src="script.js"></script> 
+</body>
+</html>
+

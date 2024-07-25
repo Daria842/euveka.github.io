@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Вход в Эврика</title>
+<meta name="description" content="Образовательная платформа, которая поможет реализовать свой потенциал!">
+<link rel="stylesheet" type="text/css" href="css/styles.css"> 
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<script src="app.js"></script>
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<?php $url = $_SERVER["REQUEST_URI"];?>
+<header>
+	<img src="Сова.png" width="130" height="180" align="left" hspace="3">
+    <br><h1>ЭВРИКА</h1>
+	<h2>УЧЕНИЕ-СВЕТ!</h2>
+	<button id="orderButton" class="mainbutton"><span>Тех.поддержка</span></button>
+</header>
+<main>
+<section>
+            <h2>Добро пожаловать в Эврика!</h2>
+            <p>Образовательная платформа, которая поможет открыть новые горизонты и реализовать свой потенциал!</p>
+			<div class="box">
+				<img src="Сова.png" alt="Логотип" class="box-logo">
+				<h2 class="box-title">Вход в ЭВРИКА</h2>
+				<p>Для продолжения Вам необходимо войти в ЭВРИКА.</p>
+				<form name="form1" method="post" action="login.php">
+					<p>Email:</p>
+					<input type="text" name="email">
+					<p>Пароль:</p>
+					<input type="password" name="password">
+				</form>
+				<a href="reg.html" class="box-lk">Регистрация:</a>
+				<a href="courses.html" class="box-link"><button class="box-button">Войти</button></a>
+			</div>
+			<p><h2>Эврика – это не просто приложение, это целая экосистема для твоего саморазвития!</h2></p> 
+            <p><h2>Зарегистрируйся и присоединяйся к нашему сообществу!</h2></p>
+        </section>
+		<div id="modal" class="modal2">
+			<div class="modal2_body">
+				<form name="form1" method="post" action="a.php">
+				<p>Имя: <input type="text" id="name" name="name" required></p>
+				<p>Ваш Email: <input type="text" id="email" name="email" required></p>
+				<p>Сообщение <textarea id="message" name="message" rows="5" required></textarea></p>
+				<p><input type="submit" name="send" value="Отправить"></p>
+				</form>
+			</div>
+		</div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Эврика. Все права защищены.</p>
+    </footer>
+	<script>
+    document.getElementById("orderButton").addEventListener("click", function() {
+      document.getElementById("modal").style.display = "block";
+    });
+  </script>
+
+</body>
+</html>
+
